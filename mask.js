@@ -74,18 +74,10 @@
 		this.loadingImg = document.createElement("img");
 		this.loadingText = document.createElement("span");
 		this.loadingImg.src = layer.loading.loadingImg;
-/*		this.loadingImg.style.display = "block";
-		this.loadingImg.style.marginLeft = "auto";
-		this.loadingImg.style.marginRight = "auto";
-		this.loadingEle.style.position = "absolute";*/
-		/*this.loadingEle.style.width = 
-		this.loadingEle.style.height = "";*/
 
 		this.loadingEle.appendChild(this.loadingImg);
 		if(layer.loadText != false){
 			this.loadingText.innerText = layer.loading.loadingText;
-	/*		this.loadingText.style.display = "block";
-			this.loadingText.style.textAlign = "center";*/
 			this.loadingEle.appendChild(this.loadingText);
 		}
 
