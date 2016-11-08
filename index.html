@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+   <link rel="stylesheet" type="text/css" href="./mask.css">
+<title>加载遮罩演示</title>
+</head>
+<body >
+	
+	<div id="pagination" style="width:50%;height:150px;margin:0 auto;"></div>
+</body>
+
+<script type="text/javascript" src="./mask.js"></script>
+<script type="text/javascript">
+
+window.onload = function(){
+	var options = {
+		loadingOption:{
+			loadingText:"加载中",
+			loadingImg:"./loading.gif"
+		},
+		loadText:true,
+		backgroundColor:'rgb(179, 153, 76)',
+		opacity:50
+	}
+	window.mask = new maskLayer("pagination",options);
+/*	setTimeout(function(){
+		mask.hide();
+	},5000);
+	setTimeout(function(){
+		mask.clean();
+	},6000);*/
+};
+</script>
+
+</html>

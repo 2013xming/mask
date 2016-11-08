@@ -1,0 +1,19 @@
+div#maskLoading{
+	position: absolute;
+}
+div#maskLoading>img{
+	width: 30px;
+	height: 30px;
+	display: block;
+	margin: 0 auto;
+	opacity: 1;
+	filter:alpha(opacity:100);
+}
+div#maskLoading>span{
+	display: block;
+	margin-top: 8px;
+	text-align: center;
+	overflow: hidden;
+	opacity: 1;
+	filter:alpha(opacity:100);
+}
