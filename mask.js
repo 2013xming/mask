@@ -53,7 +53,9 @@
 		this.mask.appendChild(this.maskLayer);
 		this.mask.appendChild(loadimg);
 		this.mask.id = "maskTop";
-		this.mask.style.position = "relative";
+		this.mask.style.position = "absolute";
+		this.mask.style.top = "0";
+		this.mask.style.left = "0";
 		this.tagDiv.appendChild(this.mask);
 	}
 	maskLayer.prototype.hide = function(){
